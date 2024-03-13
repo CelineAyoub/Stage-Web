@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden scroll;
+}
+
+.ant-modal-mask{
+  background-color: rgb(249, 249, 249, 0.13) !important;
+  backdrop-filter: blur(2px);
+}
+
+.ant-modal{
+  width: fit-content !important;
+  top: 30vh !important
+}
+
+.ant-modal-content{
+  height: fit-content;
+  width: fit-content !important;
+  border-radius: 30px !important;
+}
+
+.ant-modal input, .ant-modal textarea {
+  border-radius: 10px;
+  margin: 5px
+}
+
+.ant-modal-body{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+.ant-collapse{
+  border-radius: 16px;
+  width: 90%;
+}
+
+
+
+.clickable {
+  cursor: pointer;
+}
+
+/* radial-gradient(206.99% 200.54%  at 50% 50%, rgba(27, 115, 237, 0.3) 1%,rgb(144 227 68 / 7%) 1%, rgba(194, 46, 255, 0.06) 25.67%) */
+
+.filler{
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bolder !important;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+@media only screen and (max-width: 600px) {
+  #root{
+    grid-template-columns: 50% 50% !important;
+    grid-template-rows: max-content !important;
+    overflow-y: scroll !important;
+    height: 100% !important;
+  }
+
+  
+  body{
+    overflow: auto !important;
+  }
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+.italic{
+  font-style: italic;
+  margin: 0 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #58535300;
+
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.board-card{
+  width: '90%'
+}
+
+#root{
+  display: grid;
+  place-items: start;
+  grid-template-columns: 20% 20% 20% 40%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  grid-template-rows: 50% 50%;
+  background: rgb(10, 10, 10);
+  grid-gap: 2px;
+  justify-items: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
